@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name" translatable="false">MusicShare</string>
+    <string name="accept_connection_title">Accept connection to</string>
+    <string name="confirm_codes">Confirm the code matches on both devices</string>
+    <string name="accept_connection">Accept</string>
+    <string name="advertising_success">Advertising now</string>
+    <string name="advertising_fail">Advertising failed</string>
+    <string name="discovery_success">Discovery started</string>
+    <string name="discovery_failed">Unable to start discovering</string>
+    <string name="playback">Playback</string>
+    <string name="pause">Pause</string>
+    <string name="now_playing">Now Playing</string>
+    <string name="stop">Stop</string>
+    <string name="request_connection_title">Connection request</string>
+    <string name="request_connection_message">Do you want to request a connection to</string>
+    <string name="request_connection">Request</string>
+</resources>
