@@ -23,7 +23,7 @@ class ReceiveEndpointDiscoveryCallback(private val context: Context) : EndpointD
             val connectionDialog = AlertDialog.Builder(context)
             connectionDialog
                 .setTitle(R.string.request_connection_title)
-                .setMessage(R.string.request_connection_message.toString() + info.endpointName)
+                .setMessage(R.string.request_connection_message1.toString() + info.endpointName)
                 .setPositiveButton(
                     R.string.request_connection
                 ) { _: DialogInterface?, _: Int ->
