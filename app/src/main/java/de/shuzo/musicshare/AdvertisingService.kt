@@ -13,13 +13,13 @@ class AdvertisingService(private val context: Context) {
 
     private val receiveConnectionLifecycleCallback = ReceiveConnectionLifecycleCallback(context)
 
-    fun startAdvertising(strategy: Strategy) {
+    fun startAdvertising(strategy: Strategy, name: String) {
         if (context is MainActivity) {
             val advertisingOptions = AdvertisingOptions.Builder().setStrategy(strategy).build()
 
             Nearby.getConnectionsClient(context)
                 .startAdvertising(
-                    context.getUserName(),
+                    name,
                     "a",
                     receiveConnectionLifecycleCallback,
                     advertisingOptions
