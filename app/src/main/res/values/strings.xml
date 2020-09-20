@@ -12,6 +12,7 @@
     <string name="now_playing">Now Playing</string>
     <string name="stop">Stop</string>
     <string name="request_connection_title">Connection request</string>
-    <string name="request_connection_message">Do you want to request a connection to</string>
+    <string name="request_connection_message1">Do you want to request a connection to</string>
+    <string name="request_connection_message2">Then please check the authentication token on both devices to match: </string>
     <string name="request_connection">Request</string>
 </resources>
