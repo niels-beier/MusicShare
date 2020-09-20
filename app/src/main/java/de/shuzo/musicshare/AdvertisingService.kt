@@ -14,25 +14,27 @@ class AdvertisingService(private val context: Context) {
 
     private val receiveConnectionLifecycleCallback = ReceiveConnectionLifecycleCallback(context)
 
-    fun startAdvertising(strategy: Strategy, userName: String, ) {
-        val advertisingOptions = AdvertisingOptions.Builder().setStrategy(strategy).build()
+    fun startAdvertising(strategy: Strategy) {
+        if (context is MainActivity) {
+            val advertisingOptions = AdvertisingOptions.Builder().setStrategy(strategy).build()
 
-        Nearby.getConnectionsClient(context)
-            .startAdvertising(
-                Build.USER,
-                "a",
-                receiveConnectionLifecycleCallback,
-                advertisingOptions
-            )
-            .addOnSuccessListener {
-                Toast.makeText(context, R.string.advertising_success, Toast.LENGTH_SHORT)
-                    .show()
-                Log.d(tag, "startAdvertising: successful")
-            }
-            .addOnFailureListener {
-                Toast.makeText(context, R.string.advertising_fail, Toast.LENGTH_SHORT)
-                    .show()
-                Log.d(tag, "startAdvertising: failed")
-            }
+            Nearby.getConnectionsClient(context)
+                .startAdvertising(
+                    context.getUserName(),
+                    "a",
+                    receiveConnectionLifecycleCallback,
+                    advertisingOptions
+                )
+                .addOnSuccessListener {
+                    Toast.makeText(context, R.string.advertising_success, Toast.LENGTH_SHORT)
+                        .show()
+                    Log.d(tag, "startAdvertising: successful")
+                }
+                .addOnFailureListener {
+                    Toast.makeText(context, R.string.advertising_fail, Toast.LENGTH_SHORT)
+                        .show()
+                    Log.d(tag, "startAdvertising: failed")
+                }
+        }
     }
 }
