@@ -7,11 +7,11 @@
 /____/     /___/_________/________/___/________/________/___/  /__/\___,_/__/  /_________/
 ```
 
-Want to here music sitting together in a group but no one is<br />carrying a bluetooth speaker?
-A single device sounds awful<br />when turning up the volume...
+Want to here music sitting together in a group but no one is carrying a bluetooth speaker?
+A single device sounds awful when turning up the volume...
 
 **The solution is MusicShare.**
-With MusicShare you can listen<br />to music stored on your device **synchronous** on several devices.
+With MusicShare you can listen to music stored on your device **synchronous** on several devices.
 
 ## How about the volume?
 If you turn down the volume on all connected devices single devices will be a bit quieter but in addition all devices are louder.
