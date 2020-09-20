@@ -25,7 +25,7 @@ class ReceiveConnectionLifecycleCallback(private val context: Context) : Connect
         val alertDialog = AlertDialog.Builder(context)
         alertDialog
             .setTitle(R.string.accept_connection_title.toString() + " " + connectionInfo.endpointName)
-            .setMessage(R.string.request_connection_message.toString() + " " + connectionInfo.authenticationToken)
+            .setMessage(R.string.request_connection_message1.toString() + " " + connectionInfo.endpointName + "?\n" + R.string.request_connection_message2 + connectionInfo.authenticationToken)
             .setPositiveButton(
                 R.string.accept_connection
             ) { _: DialogInterface?, _: Int ->
