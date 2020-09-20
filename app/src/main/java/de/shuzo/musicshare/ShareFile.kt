@@ -1,14 +1,9 @@
 package de.shuzo.musicshare
 
 import android.content.Context
-import android.net.Uri
-import android.os.Build
-import android.util.Log
 import com.google.android.gms.nearby.Nearby
 import com.google.android.gms.nearby.connection.Payload
 import java.io.File
-import java.io.FileOutputStream
-import java.io.IOException
 import java.util.*
 
 class ShareFile(private val context: Context, private val pathname: String) : File(pathname) {
